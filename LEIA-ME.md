@@ -20,7 +20,7 @@ Scraping do Google Maps não é usado: viola os termos do Google e quebra com fr
 ## Configuração (uma vez)
 - **Segredos** (Settings > Secrets and variables > Actions): `GOOGLE_CLIENT_ID`, `GOOGLE_CLIENT_SECRET`, `GBP_REFRESH_TOKEN_PRINCIPAL` e, se usar Places, `GOOGLE_PLACES_API_KEY`.
 - **Negócios**: em `config.json`, um item por negócio, com `"ativo": true`. O script `scripts/autorizar-conta.mjs` gera o refresh token e lista os perfis da conta já nesse formato.
-- **Mais contas Google**: adicione em `contasGoogle` (ex.: `{ "id": "cliente2", "refreshTokenEnv": "GBP_REFRESH_TOKEN_CLIENTE2" }`), crie o segredo correspondente e inclua a variável no arquivo `.github/workflows/atualizar-avaliacoes.yml`.
+- **Mais contas Google**: adicione em `contasGoogle` (ex.: `{ "id": "cliente2", "refreshTokenEnv": "GBP_REFRESH_TOKEN_CLIENTE2" }`) e crie o segredo correspondente no GitHub. Não precisa editar o workflow.
 - **Atualizar agora**: aba Actions > "Atualizar avaliações" > Run workflow.
 
 ## Colocar no site

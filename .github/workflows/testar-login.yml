@@ -9,6 +9,4 @@ jobs:
         with: { node-version: 22 }
       - run: node scripts/testar-login.mjs
         env:
-          GOOGLE_CLIENT_ID: ${{ secrets.GOOGLE_CLIENT_ID }}
-          GOOGLE_CLIENT_SECRET: ${{ secrets.GOOGLE_CLIENT_SECRET }}
-          GBP_REFRESH_TOKEN_PRINCIPAL: ${{ secrets.GBP_REFRESH_TOKEN_PRINCIPAL }}
+          SEGREDOS: ${{ toJSON(secrets) }}
