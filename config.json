@@ -1,7 +1,10 @@
 {
   "idioma": "pt-BR",
   "contasGoogle": [
-    { "id": "principal", "refreshTokenEnv": "GBP_REFRESH_TOKEN_PRINCIPAL" }
+    {
+      "id": "principal",
+      "refreshTokenEnv": "GBP_REFRESH_TOKEN_PRINCIPAL"
+    }
   ],
   "negocios": [
     {
@@ -12,6 +15,16 @@
       "accountId": "118375795322116446989",
       "locationId": "10162090824002409757",
       "placeId": "ChIJNVsa9zFLxwcRKRKJnhA14Gk",
+      "ativo": true
+    },
+    {
+      "id": "elaine-araujo",
+      "nome": "Elaine Araújo - Nutricionista",
+      "fonte": "business_profile",
+      "conta": "principal",
+      "accountId": "118375795322116446989",
+      "locationId": "1010435588569174991",
+      "placeId": "ChIJ5UpPe34jGCERoEBFdtJF8GA",
       "ativo": true
     }
   ]
