@@ -1,0 +1,14 @@
+name: Testar login
+on: { workflow_dispatch: {} }
+jobs:
+  testar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22 }
+      - run: node scripts/testar-login.mjs
+        env:
+          GOOGLE_CLIENT_ID: ${{ secrets.GOOGLE_CLIENT_ID }}
+          GOOGLE_CLIENT_SECRET: ${{ secrets.GOOGLE_CLIENT_SECRET }}
+          GBP_REFRESH_TOKEN_PRINCIPAL: ${{ secrets.GBP_REFRESH_TOKEN_PRINCIPAL }}
