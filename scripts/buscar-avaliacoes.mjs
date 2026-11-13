@@ -29,12 +29,6 @@ if (existsSync(path.join(RAIZ, ".env"))) {
   }
 }
 
-// No GitHub Actions, todos os segredos chegam juntos em SEGREDOS (assim basta criar
-// um segredo novo para conectar outra conta, sem editar o workflow).
-if (process.env.SEGREDOS) {
-  try { for (const [k, v] of Object.entries(JSON.parse(process.env.SEGREDOS))) if (!process.env[k]) process.env[k] = v; } catch {}
-}
-
 const config = JSON.parse(await readFile(path.join(RAIZ, "config.json"), "utf8"));
 const filtroId = process.argv[2];
 

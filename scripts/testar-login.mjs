@@ -5,9 +5,6 @@ import { readFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
-if (process.env.SEGREDOS) {
-  try { for (const [k, v] of Object.entries(JSON.parse(process.env.SEGREDOS))) if (!process.env[k]) process.env[k] = v; } catch {}
-}
 const RAIZ = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const config = JSON.parse(await readFile(path.join(RAIZ, "config.json"), "utf8"));
 const { GOOGLE_CLIENT_ID: id, GOOGLE_CLIENT_SECRET: secret } = process.env;
