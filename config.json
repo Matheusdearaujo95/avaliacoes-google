@@ -5,21 +5,14 @@
   ],
   "negocios": [
     {
-      "id": "exemplo-meu-negocio",
-      "nome": "Meu Negócio (perfil que eu gerencio)",
+      "id": "voe-ja",
+      "nome": "Voe Já Agência de Viagens",
       "fonte": "business_profile",
       "conta": "principal",
-      "accountId": "COLOQUE_O_ACCOUNT_ID",
-      "locationId": "COLOQUE_O_LOCATION_ID",
-      "placeId": "COLOQUE_O_PLACE_ID_OPCIONAL",
-      "ativo": false
-    },
-    {
-      "id": "exemplo-negocio-publico",
-      "nome": "Negócio que eu não gerencio",
-      "fonte": "places",
-      "placeId": "COLOQUE_O_PLACE_ID",
-      "ativo": false
+      "accountId": "118375795322116446989",
+      "locationId": "10162090824002409757",
+      "placeId": "ChIJNVsa9zFLxwcRKRKJnhA14Gk",
+      "ativo": true
     }
   ]
 }
