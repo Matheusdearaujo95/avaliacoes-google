@@ -18,7 +18,20 @@ const c = await fetch("https://mybusinessaccountmanagement.googleapis.com/v1/acc
 const contas = await c.json();
 if (c.ok) {
   console.log("✅ API liberada! Contas encontradas:");
-  for (const a of contas.accounts || []) console.log("   -", a.accountName, "|", a.name, "|", a.type);
+  const cab = { Authorization: `Bearer ${tok.access_token}` };
+  for (const a of contas.accounts || []) {
+    console.log("   -", a.accountName, "|", a.name, "|", a.type);
+    let pageToken = "";
+    do {
+      const u = `https://mybusinessbusinessinformation.googleapis.com/v1/${a.name}/locations?readMask=name,title,metadata&pageSize=100${pageToken ? `&pageToken=${pageToken}` : ""}`;
+      const res = await (await fetch(u, { headers: cab })).json();
+      if (res.error) { console.log("     (não consegui listar os perfis:", res.error.status, String(res.error.message).slice(0, 150) + ")"); break; }
+      for (const loc of res.locations || []) {
+        console.log("     PERFIL:", JSON.stringify({ nome: loc.title, accountId: a.name.replace("accounts/", ""), locationId: loc.name.replace("locations/", ""), placeId: loc.metadata?.placeId || null }));
+      }
+      pageToken = res.nextPageToken || "";
+    } while (pageToken);
+  }
 } else {
   const msg = contas.error?.message || "";
   console.log("⏳ API ainda não liberada pelo Google (normal enquanto o pedido está em análise).");
