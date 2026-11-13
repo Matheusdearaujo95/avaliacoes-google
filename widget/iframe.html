@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Avaliações do Google</title>
+<style>html,body{margin:0;background:transparent}</style></head>
+<body>
+<!-- Para construtores de site que só aceitam iframe (Wix, Hotmart, Kiwify, etc.)
+     Ex.: <iframe src="https://SEU-DOMINIO/avaliacoes/widget/iframe.html?id=meu-negocio&layout=grade" width="100%" height="520" style="border:0"></iframe> -->
+<div id="w" class="avaliacoes-google"></div>
+<script>
+  var p = new URLSearchParams(location.search), w = document.getElementById("w");
+  var id = (p.get("id") || "").replace(/[^a-z0-9_-]/gi, "");
+  w.dataset.src = p.get("src") && /^https:\/\//.test(p.get("src")) ? p.get("src") : "../data/" + id + ".json";
+  ["layout", "tema", "max", "cor"].forEach(function (k) { if (p.get(k)) w.dataset[k] = p.get(k); });
+  if (p.get("min")) w.dataset.minEstrelas = p.get("min");
+  if (p.get("texto")) w.dataset.soComTexto = p.get("texto");
+  if (w.dataset.tema) w.setAttribute("data-tema", w.dataset.tema);
+</script>
+<script src="avaliacoes.js"></script>
+</body></html>

@@ -1,0 +1,125 @@
+{
+  "id": "exemplo",
+  "fonte": "exemplo",
+  "atualizadoEm": "2026-11-13T09:07:28.053Z",
+  "nome": "Negócio Exemplo (dados fictícios)",
+  "media": 4.8,
+  "total": 137,
+  "linkAvaliar": "https://www.google.com/maps",
+  "linkMaps": "https://www.google.com/maps",
+  "avaliacoes": [
+    {
+      "id": "exemplo-0",
+      "autor": "Ana Paula Ribeiro",
+      "foto": null,
+      "linkAutor": null,
+      "estrelas": 5,
+      "texto": "Atendimento impecável do começo ao fim. Me explicaram tudo com muita paciência e o resultado superou o que eu esperava. Já indiquei para a família toda!",
+      "data": "2026-11-11T09:07:28.047Z",
+      "atualizada": null,
+      "resposta": {
+        "texto": "Muito obrigado, Ana! Ficamos felizes em ajudar.",
+        "data": null
+      }
+    },
+    {
+      "id": "exemplo-1",
+      "autor": "Carlos Mendes",
+      "foto": null,
+      "linkAutor": null,
+      "estrelas": 5,
+      "texto": "Ótimo lugar, equipe muito atenciosa.",
+      "data": "2026-11-02T09:07:28.047Z",
+      "atualizada": null,
+      "resposta": null
+    },
+    {
+      "id": "exemplo-2",
+      "autor": "Juliana Costa",
+      "foto": null,
+      "linkAutor": null,
+      "estrelas": 5,
+      "texto": "Fui muito bem recebida. Ambiente limpo, organizado e pontualidade no horário marcado. Voltarei com certeza.",
+      "data": "2026-10-24T09:07:28.047Z",
+      "atualizada": null,
+      "resposta": null
+    },
+    {
+      "id": "exemplo-3",
+      "autor": "Rafael Oliveira",
+      "foto": null,
+      "linkAutor": null,
+      "estrelas": 5,
+      "texto": "Profissionais excelentes. Resolveram meu problema rápido e com preço justo.",
+      "data": "2026-10-15T09:07:28.047Z",
+      "atualizada": null,
+      "resposta": null
+    },
+    {
+      "id": "exemplo-4",
+      "autor": "Fernanda Lima",
+      "foto": null,
+      "linkAutor": null,
+      "estrelas": 4,
+      "texto": "Gostei bastante, só achei a espera um pouco longa no dia em que fui, mas o atendimento compensou.",
+      "data": "2026-10-06T09:07:28.047Z",
+      "atualizada": null,
+      "resposta": null
+    },
+    {
+      "id": "exemplo-5",
+      "autor": "Bruno Almeida",
+      "foto": null,
+      "linkAutor": null,
+      "estrelas": 5,
+      "texto": "",
+      "data": "2026-09-27T09:07:28.047Z",
+      "atualizada": null,
+      "resposta": null
+    },
+    {
+      "id": "exemplo-6",
+      "autor": "Patrícia Souza",
+      "foto": null,
+      "linkAutor": null,
+      "estrelas": 5,
+      "texto": "Recomendo de olhos fechados! Desde o primeiro contato pelo WhatsApp até o pós-atendimento, tudo muito profissional. Dá pra ver que eles se importam de verdade com o cliente e isso faz toda a diferença hoje em dia. Parabéns a toda a equipe pelo trabalho incrível.",
+      "data": "2026-09-18T09:07:28.047Z",
+      "atualizada": null,
+      "resposta": null
+    },
+    {
+      "id": "exemplo-7",
+      "autor": "Diego Martins",
+      "foto": null,
+      "linkAutor": null,
+      "estrelas": 5,
+      "texto": "Muito bom!",
+      "data": "2026-09-09T09:07:28.047Z",
+      "atualizada": null,
+      "resposta": null
+    },
+    {
+      "id": "exemplo-8",
+      "autor": "Camila Rocha",
+      "foto": null,
+      "linkAutor": null,
+      "estrelas": 5,
+      "texto": "Experiência nota 10. Voltarei mais vezes.",
+      "data": "2026-08-31T09:07:28.047Z",
+      "atualizada": null,
+      "resposta": null
+    },
+    {
+      "id": "exemplo-9",
+      "autor": "Lucas Ferreira",
+      "foto": null,
+      "linkAutor": null,
+      "estrelas": 4,
+      "texto": "Bom atendimento, preço justo.",
+      "data": "2026-08-22T09:07:28.047Z",
+      "atualizada": null,
+      "resposta": null
+    }
+  ]
+}

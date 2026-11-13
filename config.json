@@ -1,0 +1,25 @@
+{
+  "idioma": "pt-BR",
+  "contasGoogle": [
+    { "id": "principal", "refreshTokenEnv": "GBP_REFRESH_TOKEN_PRINCIPAL" }
+  ],
+  "negocios": [
+    {
+      "id": "exemplo-meu-negocio",
+      "nome": "Meu Negócio (perfil que eu gerencio)",
+      "fonte": "business_profile",
+      "conta": "principal",
+      "accountId": "COLOQUE_O_ACCOUNT_ID",
+      "locationId": "COLOQUE_O_LOCATION_ID",
+      "placeId": "COLOQUE_O_PLACE_ID_OPCIONAL",
+      "ativo": false
+    },
+    {
+      "id": "exemplo-negocio-publico",
+      "nome": "Negócio que eu não gerencio",
+      "fonte": "places",
+      "placeId": "COLOQUE_O_PLACE_ID",
+      "ativo": false
+    }
+  ]
+}
